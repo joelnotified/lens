@@ -55,7 +55,7 @@ local kp =
 
 ## Helm chart
 
-1. To see cpu metrics properly, please set value of `server.global.scrape_timeout` less than 1 minute, for example
+1. To see cpu metrics properly, please set value of `server.global.scrape_interval` less than 1 minute, for example
 
 ```
 helm upgrade --set server.global.scrape_interval=30s prometheus stable/prometheus
